@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(10081437.jpg);
+    background-size: cover;
+    background-attachment: fixed; /* Mobilde arka planın bozulmaması için */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px 20px 15px; /* Yanlardan taşma payı eklendi */
+    min-height: 100vh; /* İçeriği dikeyde ortalamak için */
+}
+
+.btn-container {
+    margin-top: 2rem;
+    box-sizing: border-box;
+    display: flex; /* Butonların mobilde yan yana veya alt alta düzgün durması için */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#new-btn, #card-btn {
+    padding: 1.5rem 1.2rem; /* Sabit px yerine rem tercih edildi */
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px; /* margin-left/right yerine genel margin */
+    flex: 1 1 auto; /* Küçük ekranlarda esnemesi için */
+    max-width: 200px;
+}
+
+.background {
+    width: 90%; /* Mobilde ekrana yapışmaması için */
+    max-width: 600px;
+    display: inline-block;
+    text-align: center;
+    padding: 4rem 2rem; /* İç boşluklar esnetildi */
+    border-radius: 12px;
+    box-shadow: 2px 4px 8px rgba(17, 59, 7, 0.7);
+    background-color: #268214;
+    box-sizing: border-box;
+}
+
+h1, h3, h2, p {
+    text-shadow: 2px 4px 8px rgba(109, 255, 73, 0.7);
+    color: rgb(38, 13, 13);
+    margin-bottom: 0;
+    word-wrap: break-word; /* Uzun kelimelerin taşmasını önler */
+}
+
+.cool {
+    text-shadow: 2px 4px 8px rgba(109, 255, 73, 0.7);
+    color: rgb(38, 13, 13);
+}
+
+.inputField {
+    padding: 20px;
+    width: 100%; /* Mobilde tam genişlik */
+    max-width: 400px; /* Çok geniş ekranlarda aşırı uzamaması için */
+    box-sizing: border-box;
+    border: none;
+    border-radius: 12px;
+    background-color: #35a41f;
+    color: black;
+    font-size: 1rem;
+}
+
+.inputField::placeholder {
+    color: black;
+}
+
+/* Küçük Ekranlar İçin Medya Sorgusu */
+@media (max-width: 480px) {
+    .background {
+        padding: 2rem 1rem;
+    }
+    
+    #new-btn, #card-btn {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+}

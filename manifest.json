@@ -1,0 +1,22 @@
+{
+  "short_name": "App",
+  "name": "Astrid Project",
+  "description": "Astrid Otonom Geliştirme Projesi",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#268214",
+  "background_color": "#268214",
+  "orientation": "portrait"
+}
